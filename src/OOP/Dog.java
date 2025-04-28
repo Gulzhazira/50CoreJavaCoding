@@ -27,4 +27,17 @@ public class Dog extends Animal{
         }
     }
     
+
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        Dog dog = new Dog();
+        
+        animal.makeVoice();
+        dog.makeVoice();
+        
+        dog.name = "Neo";
+        dog.weightInKg = 25;
+        dog.favoriteFood("meat");
+        dog.favoriteFood(1200);
+    }
 }
